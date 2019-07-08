@@ -1,0 +1,21 @@
+{
+  "short_name": "a11y-Basics",
+  "name": "Accessibility Basics",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#5D5D81",
+  "background_color": "#fffaf4",
+  "icons": [
+    {
+      "src": "/img/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
