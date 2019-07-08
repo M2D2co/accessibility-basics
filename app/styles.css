@@ -21,6 +21,9 @@ body {
 a {
   padding: 1rem;
 }
+p a {
+  padding: 0;
+}
 a:link,
 a:visited {
   color: var(--accent);
@@ -71,12 +74,12 @@ button:not(:disabled) {
   color: var(--grey);
 }
 
-ul {
+.app ul {
   list-style-type: none;
   padding: 0;
 }
 
-li {
+.app li {
   margin: 1rem 0;
 }
 
@@ -91,6 +94,9 @@ li {
   color: var(--background);
   display: flex;
   padding: 1rem;
+}
+.form .label {
+  margin-bottom: .25rem;
 }
 input[type="text"] {
   border: none;
@@ -181,16 +187,17 @@ input[type="checkbox"]:checked:after {
 }
 
 .footer {
-  align-items: center;
   border-top: solid 1px var(--accent2);
-  display: flex;
-  justify-content: space-between;
   margin-top: auto;
-  padding: 0 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+.footer .twitter {
+  display: flex;
+  justify-content: space-around;
 }
 
 .twitter a {
-  display: inline-block;
   margin-left: 1rem;
 }
 .twitter a:before {
@@ -207,15 +214,13 @@ input[type="checkbox"]:checked:after {
   align-items: center;
   animation: show-hide 250ms 1;
   background: var(--accent2);
-  border-radius: 4px;
-  bottom: 2rem;
-  box-shadow: 0 1px 3px rgba(93, 93, 129, .12), 0 1px 2px rgba(93, 93, 129, .24);
+  bottom: 0;
   display: none;
   justify-content: space-between;
-  left: calc(50% - 10rem);
+  left:0;
   padding: 1rem;
-  position: absolute;
-  width: 20rem;
+  position: fixed;
+  width: 100vw;
 }
 .delete-success p {
   margin: 0;
@@ -235,6 +240,25 @@ input[type="checkbox"]:checked:after {
   animation: show-hide 250ms 1;
   animation-direction: reverse;
   opacity: 0;
+}
+
+.accessibility-statement {
+  padding: 1rem;
+}
+.accessibility-statement p,
+.accessibility-statement li {
+  line-height: 1.75rem;
+}
+
+.accessibility-statement a:before {
+  line-height: 1rem;
+}
+
+.back {
+  font-variant: small-caps;
+}
+.back:before {
+  content: '';
 }
 
 @media (min-width: 500px) {
@@ -258,5 +282,17 @@ input[type="checkbox"]:checked:after {
   .links {
     flex-basis: 33%;
     margin-left: 0;
+  }
+  .footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .delete-success {
+    border-radius: 4px;
+    bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(93, 93, 129, .12), 0 1px 2px rgba(93, 93, 129, .24);
+    left: calc(50% - 10rem);
+    width: 20rem;
   }
 }
