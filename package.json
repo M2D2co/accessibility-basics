@@ -2,7 +2,7 @@
   "name": "shadow-dom",
   "version": "0.0.0",
   "description": "Accessibility Basics",
-  "repository": "",
+  "repository": "https://github.com/martine-dowden/accessibility-basics",
   "license": "MIT",
   "private": false,
   "devDependencies": {
@@ -12,7 +12,7 @@
   },
   "scripts": {
     "prestart": "npm install",
-    "server": "http-server -a localhost -p 8080 -c-1 ./app/",
+    "server": "http-server -a localhost -p 8080 -c-1 ./",
     "livereload": "live-reload --port 9091 app/",
     "start": "parallelshell 'npm run server' 'npm run livereload'"
   },
