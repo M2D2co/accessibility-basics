@@ -16,7 +16,6 @@ This app is the base for a hands on workshop for those interested in learning ho
 
 * `master` has the accessible version of the application.
 * `start` has the starting point for the workshop. This branch includes errors that will be tested for, explained, and fixed during the workshop.
-* all other branches are steps at different point during the workshop.
 
 ## Running the code
 
