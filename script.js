@@ -165,6 +165,14 @@ function deleteItem(event) {
   request.onsuccess = event => {
     document.getElementById('deleteSuccess').style.display = 'flex';
     getList();
+
+    
+    // Timer to close delete notication
+    setTimeout(() => {
+      dismissAlert();
+    }, 500);
+
+
   };
 }
 

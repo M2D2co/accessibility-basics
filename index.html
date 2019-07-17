@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
 
 <head>
   <title>Accessibility Basics</title>
@@ -17,48 +17,47 @@
 </head>
 
 <body class="app">
-  <header class="header">
-    <img class="logo" src="./img/logo.svg" alt="Todo">
-    <h1 class="title">Accessibility Basics</h1>
-  </header>
+  <div class="header">
+    <img class="logo" src="./img/logo.svg">
+    <div class="title">Accessibility Basics</div>
+  </div>
   <div class="container">
-    <main class="main">
+    <div class="main">
       <div class="todo-list">
-        <section class="list">
-          <h2 class="title">Todo List</h2>
-          <ul aria-live="polite" aria-label="To do list" id="list"></ul>
-        </section>
-        <form class="form">
+        <div class="list">
+          <div class="title">Todo List</div>
+          <ul aria-label="To do list" id="list"></ul>
+        </div>
+        <div class="form">
           <div class="input">
-            <label class="label" for="inputField">Todo Item:</label>
-            <input id="inputField" required type="text" placeholder="I need to..." maxlength="100" autFi>
+            <input tabindex="2" class="text-input" id="inputField" required placeholder="I need to..." maxlength="100">
           </div>
-          <button id="submit" onclick="addToList(event)" type="submit" class="submit" aria-label="add">
-            <img src="./img/add.svg" alt="">
-          </button>
-        </form>
+          <div id="submit" onclick="addToList(event)" type="submit" class="submit">
+            <img src="./img/add.svg">
+          </div>
+        </div>
       </div>
-      <section class="completed-list">
-        <h2 class="title">Completed Items</h2>
+      <div class="completed-list">
+        <div class="title">Completed Items</div>
         <ul id="completed" class="completed" aria-live="polite" aria-label="Completed list items"></ul>
-      </section>
-    </main>
-    <aside class="links">
-      <h2 class="title">Links</h2>
+      </div>
+    </div>
+    <div class="links">
+      <div class="title">Links</div>
       <ul>
         <li>
           Conformance Testing
           <ul>
-            <li><a href="https://www.deque.com/axe/" rel="noopener" target="_blank">Axe</a></li>
-            <li><a href="https://developers.google.com/web/tools/lighthouse/" rel="noopener"
-                target="_blank">Lighthouse</a></li>
+            <div><button tabindex="4" class="button-link" onClick="document.location='https://www.deque.com/axe/'">Axe</button></div>
+            <div><a href="https://developers.google.com/web/tools/lighthouse/"
+                target="_blank">Lighthouse</a></div>
           </ul>
         </li>
         <li>
           Development Environment
           <ul>
             <li><a href="https://stylelint.io/" rel="noopener" target="_blank">stylelint</a></li>
-            <li><a href="https://eslint.org/" rel="noopener" target="_blank">ESLint</a></li>
+            <li><a href="https://eslint.org/" rel="noopener" target="_blank" tabindex="1">ESLint</a></li>
             <li><a href="https://github.com/htmlhint/HTMLHint" rel="noopener" target="_blank">HTMLHint</a></li>
           </ul>
         </li>
@@ -72,7 +71,7 @@
         <li>
           Visualization
           <ul>
-            <li><a href="http://khan.github.io/tota11y/" rel="noopener" target="_blank">Tota11y</a></li>
+            <li><a href="http://khan.github.io/tota11y/" rel="noopener" target="_blank" tabindex="3">Tota11y</a></li>
             <li><a href="https://wave.webaim.org/extension/" rel="noopener" target="_blank">Wave</a></li>
           </ul>
         </li>
@@ -83,17 +82,17 @@
           </ul>
         </li>
       </ul>
-    </aside>
+    </div>
   </div>
-  <footer class="footer">
+  <div class="footer">
     <div>Happy Coding!</div>
     <div class="twitter">
       <a href="https://twitter.com/Martine_Dowden" rel="noopener" target="_blank">@Martine_Dowden</a>
       <a href="https://twitter.com/mrdowden" rel="noopener" target="_blank">@mrdowden</a>
     </div>
-  </footer>
+  </div>
 
-  <div role="alert" class="delete-success" id="deleteSuccess">
+  <div class="delete-success" id="deleteSuccess">
     <p>Item was successfully deleted</p>
     <button type="button" class="button" onclick="dismissAlert()">ok</button>
   </div>
