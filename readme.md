@@ -8,7 +8,7 @@ This app is the base for a hands on workshop for those interested in learning ho
 
 ## Demo
 
-demo: [https://m2d2co.github.io/accessibility-basics/index.html](https://martine-dowden.github.io/accessibility-basics/index.html)
+demo: [https://m2d2co.github.io/accessibility-basics/index.html](https://m2d2co.github.io/accessibility-basics/index.html)
 
 ## Getting Started
 
