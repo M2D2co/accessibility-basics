@@ -6,15 +6,12 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "http-server": "^0.11.1",
-    "live-reload": "^1.1.0",
-    "parallelshell": "3.0.1"
+    "http-server": "^0.11.1"
   },
   "scripts": {
     "prestart": "npm install",
     "server": "http-server -a localhost -p 8080 -c-1 ./",
-    "livereload": "live-reload --port 9091 app/",
-    "start": "parallelshell 'npm run server' 'npm run livereload'"
+    "start": "npm run server"
   },
   "dependencies": {}
 }
