@@ -6,15 +6,11 @@ If you ever use the elevator, subtitles to watch that cat video during a boring 
 
 This app is the base for a hands on workshop for those interested in learning how to get started.
 
-## Demo
-
-demo: [https://m2d2co.github.io/accessibility-basics/index.html](https://m2d2co.github.io/accessibility-basics/index.html)
-
 ## Getting Started
 
 ### Branches
 
-* `master` has the accessible version of the application.
+* `latest` has the accessible version of the application.
 * `start` has the starting point for the workshop. This branch includes errors that will be tested for, explained, and fixed during the workshop.
 
 ## Running the code
@@ -25,5 +21,7 @@ _Note:_ Most accessibility plugins such as axe or wave require the application t
 
 _Note:_ A modern browser is necessary because the code relies on:
 
+* HTML
+* CSS
 * JavaScript ES6 syntax
 * IndexedDb
